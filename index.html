@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VerifyIQ - Modern AI-powered resume screening solution">
+    <title>VerifyIQ - Intelligent Resume Screening</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="6" fill="#2563EB"/>
+                        <path d="M16 8L20 14H12L16 8Z" fill="white"/>
+                        <path d="M10 16L14 22H6L10 16Z" fill="white"/>
+                        <path d="M22 16L26 22H18L22 16Z" fill="white"/>
+                    </svg>
+                    <span class="logo-text">VerifyIQ</span>
+                </div>
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a href="#features" role="menuitem">Features</a></li>
+                    <li role="none"><a href="#job-search" role="menuitem">Job Search</a></li>
+                    <li role="none"><a href="#how-it-works" role="menuitem">How It Works</a></li>
+                    <li role="none" class="nav-cta"><a href="#upload" role="menuitem" class="btn btn-primary">ATS Check</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" role="banner">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Screen Resumes <span class="highlight">Intelligently</span> in Seconds
+                    </h1>
+                    <p class="hero-description">
+                        Get an ATS pass/fail check, CV positioning tips, and job matches in one place—
+                        beyond Resume Worded, Jobscan, TopCV & LoopCV. For recruiters and job seekers.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#upload" class="btn btn-primary btn-large">Start Screening</a>
+                        <a href="#demo" class="btn btn-secondary btn-large">Watch Demo</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label">Resumes Screened</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">90%</div>
+                            <div class="stat-label">Time Saved</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Accuracy Rate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="dashboard-preview">
+                        <div class="dashboard-header">
+                            <div class="dashboard-dot"></div>
+                            <div class="dashboard-dot"></div>
+                            <div class="dashboard-dot"></div>
+                        </div>
+                        <div class="dashboard-content">
+                            <div class="resume-card">
+                                <div class="resume-card-header">
+                                    <div class="avatar"></div>
+                                    <div class="candidate-info">
+                                        <div class="name-skeleton"></div>
+                                        <div class="title-skeleton"></div>
+                                    </div>
+                                </div>
+                                <div class="skills-tags">
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                </div>
+                                <div class="match-score">
+                                    <div class="score-label">Match Score</div>
+                                    <div class="score-bar">
+                                        <div class="score-fill" style="width: 87%"></div>
+                                    </div>
+                                    <div class="score-value">87%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features" role="region" aria-labelledby="features-heading">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="features-heading" class="section-title">Powerful Features</h2>
+                <p class="section-description">
+                    Everything you need to streamline your hiring process
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">AI-Powered Analysis</h3>
+                    <p class="feature-description">
+                        Advanced machine learning algorithms analyze resumes for skills, experience, and cultural fit.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-description">
+                        Screen hundreds of resumes in minutes, not days. Get results instantly.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Secure & Private</h3>
+                    <p class="feature-description">
+                        Enterprise-grade security ensures candidate data remains confidential and protected.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Customizable Criteria</h3>
+                    <p class="feature-description">
+                        Define your ideal candidate profile with custom skills, experience levels, and requirements.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Ranking</h3>
+                    <p class="feature-description">
+                        Candidates are automatically ranked by relevance and match score for easy comparison.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Team Collaboration</h3>
+                    <p class="feature-description">
+                        Share insights, add notes, and collaborate with your hiring team in real-time.
+                    </p>
+                </div>
+                <div class="feature-card feature-card-ats">
+                    <div class="feature-icon feature-icon-ats">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">ATS Pass/Fail Check</h3>
+                    <p class="feature-description">
+                        Know if your CV will pass applicant tracking systems. Get a clear score plus actionable tips—format, sections, keywords.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">CV Positioning & Job Match</h3>
+                    <p class="feature-description">
+                        Auto-generated headline and summary for job applications. See available jobs ranked by fit to your profile.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section id="upload" class="upload-section" role="region" aria-labelledby="upload-heading">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="upload-heading" class="section-title">Upload & Analyze</h2>
+                <p class="section-description">
+                    Upload resumes to get instant AI-powered analysis
+                </p>
+            </div>
+            <div class="upload-container">
+                <div class="upload-area" id="uploadArea" role="button" tabindex="0" aria-label="Upload resume files">
+                    <input type="file" id="fileInput" multiple accept=".pdf,.doc,.docx" aria-label="Select resume files" style="display: none;">
+                    <div class="upload-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3 class="upload-title">Drop resumes here or click to browse</h3>
+                    <p class="upload-hint">Supports PDF, DOC, DOCX (Max 10MB per file)</p>
+                    <div class="upload-progress" id="uploadProgress" style="display: none;">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <span class="progress-text" id="progressText">0%</span>
+                    </div>
+                </div>
+                <div class="results-container" id="resultsContainer" style="display: none;">
+                    <h3 class="results-title">Analysis Results</h3>
+                    <div class="results-grid" id="resultsGrid"></div>
+                    <div class="ats-results-container" id="atsResultsContainer"></div>
+                    <!-- Power Tools / Niche Enhancements (12 features) -->
+                    <section class="enhancements-panel" id="enhancementsPanel" style="display: none;" aria-labelledby="enhancements-heading">
+                        <h2 id="enhancements-heading" class="section-title enhancements-title">Power Tools</h2>
+                        <p class="section-description">Niche tools to stand out—beyond standard ATS checkers.</p>
+                        <div class="enhancement-tabs" role="tablist">
+                            <button type="button" class="enhancement-tab active" role="tab" aria-selected="true" data-panel="multiAts">Multi-ATS Simulator</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="stressTest">Stress Test</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="outcomeLoop">Outcome Tracker</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="companyPlaybooks">Company Playbooks</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="biasScanner">Bias & Risk Scanner</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="consistencyCheck">Consistency Check</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="first6Sec">First 6 Seconds</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="starGenerator">STAR Stories</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="appStrategy">Application Strategy</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="redaction">Redaction Profiles</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="recruiterMode">Recruiter View</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="resumeLibrary">Resume Library</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="rejectionAutopsy">Rejection Autopsy</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="jdFingerprint">JD Fit</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="buzzwordSubstance">Buzzword vs Substance</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="salaryLevel">Salary & Level</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="onePagerTwoPager">1-Page vs 2-Page</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="stealthApplicant">Stealth Applicant</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="resumeDecay">Resume Decay</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="referralHints">Referral Hints</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="globalReadability">Global Readability</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="versionDiff">Version Diff</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="interviewBait">Interview Bait</button>
+                            <button type="button" class="enhancement-tab" role="tab" aria-selected="false" data-panel="complianceFlags">Compliance Check</button>
+                        </div>
+                        <div class="enhancement-content" id="enhancementContent" role="tabpanel"></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Search – Standalone fluid section -->
+    <section id="job-search" class="job-search-standalone" role="region" aria-labelledby="job-search-hero-heading">
+        <div class="job-search-standalone-inner">
+            <div class="job-search-standalone-content">
+                <h2 id="job-search-hero-heading" class="job-search-standalone-title">Find your next role</h2>
+                <p class="job-search-standalone-description">Search across Indeed, LinkedIn & Google Jobs. Choose a country to find jobs.</p>
+                <form class="job-search-standalone-form" id="jobSearchForm" role="search" aria-label="Job search">
+                    <div class="job-search-standalone-fields">
+                        <label for="jobSearchKeyword" class="visually-hidden">Job title or keywords</label>
+                        <input type="text" id="jobSearchKeyword" class="job-search-standalone-input" placeholder="Job title or keywords (e.g. developer, nurse, teacher)" aria-label="Job title or keywords" autocomplete="off">
+                        <label for="jobSearchCountry" class="visually-hidden">Country</label>
+                        <select id="jobSearchCountry" class="job-search-standalone-select" aria-label="Country">
+                            <option value="">Anywhere</option>
+                            <option value="remote">Remote</option>
+                            <option value="us">United States</option>
+                            <option value="gb">United Kingdom</option>
+                            <option value="ca">Canada</option>
+                            <option value="au">Australia</option>
+                            <option value="de">Germany</option>
+                            <option value="fr">France</option>
+                            <option value="nl">Netherlands</option>
+                            <option value="ie">Ireland</option>
+                            <option value="in">India</option>
+                            <option value="sg">Singapore</option>
+                            <option value="jp">Japan</option>
+                            <option value="es">Spain</option>
+                            <option value="it">Italy</option>
+                            <option value="br">Brazil</option>
+                            <option value="mx">Mexico</option>
+                            <option value="za">South Africa</option>
+                            <option value="nz">New Zealand</option>
+                            <option value="pl">Poland</option>
+                            <option value="se">Sweden</option>
+                            <option value="ch">Switzerland</option>
+                            <option value="be">Belgium</option>
+                            <option value="at">Austria</option>
+                            <option value="pt">Portugal</option>
+                            <option value="hk">Hong Kong</option>
+                            <option value="ae">United Arab Emirates</option>
+                            <option value="il">Israel</option>
+                            <option value="ph">Philippines</option>
+                            <option value="id">Indonesia</option>
+                            <option value="my">Malaysia</option>
+                            <option value="ar">Argentina</option>
+                            <option value="cl">Chile</option>
+                            <option value="co">Colombia</option>
+                            <option value="no">Norway</option>
+                            <option value="dk">Denmark</option>
+                            <option value="fi">Finland</option>
+                            <option value="ru">Russia</option>
+                            <option value="kr">South Korea</option>
+                            <option value="cn">China</option>
+                            <option value="th">Thailand</option>
+                            <option value="vn">Vietnam</option>
+                            <option value="tr">Turkey</option>
+                            <option value="eg">Egypt</option>
+                            <option value="ng">Nigeria</option>
+                            <option value="ke">Kenya</option>
+                            <option value="gh">Ghana</option>
+                            <option value="ma">Morocco</option>
+                            <option value="tn">Tunisia</option>
+                            <option value="dz">Algeria</option>
+                            <option value="et">Ethiopia</option>
+                            <option value="tz">Tanzania</option>
+                            <option value="ug">Uganda</option>
+                            <option value="cm">Cameroon</option>
+                            <option value="ci">Ivory Coast</option>
+                            <option value="sn">Senegal</option>
+                            <option value="zw">Zimbabwe</option>
+                            <option value="zm">Zambia</option>
+                            <option value="bw">Botswana</option>
+                            <option value="ao">Angola</option>
+                            <option value="mz">Mozambique</option>
+                            <option value="rw">Rwanda</option>
+                            <option value="mu">Mauritius</option>
+                            <option value="na">Namibia</option>
+                            <option value="ro">Romania</option>
+                            <option value="cz">Czech Republic</option>
+                            <option value="hu">Hungary</option>
+                            <option value="gr">Greece</option>
+                            <option value="hr">Croatia</option>
+                            <option value="rs">Serbia</option>
+                            <option value="bg">Bulgaria</option>
+                            <option value="ua">Ukraine</option>
+                            <option value="sk">Slovakia</option>
+                            <option value="si">Slovenia</option>
+                            <option value="lt">Lithuania</option>
+                            <option value="lv">Latvia</option>
+                            <option value="ee">Estonia</option>
+                            <option value="is">Iceland</option>
+                            <option value="lu">Luxembourg</option>
+                            <option value="mt">Malta</option>
+                            <option value="cy">Cyprus</option>
+                            <option value="pk">Pakistan</option>
+                            <option value="bd">Bangladesh</option>
+                            <option value="lk">Sri Lanka</option>
+                            <option value="np">Nepal</option>
+                            <option value="kh">Cambodia</option>
+                            <option value="mm">Myanmar</option>
+                            <option value="kz">Kazakhstan</option>
+                            <option value="sa">Saudi Arabia</option>
+                            <option value="qa">Qatar</option>
+                            <option value="kw">Kuwait</option>
+                            <option value="bh">Bahrain</option>
+                            <option value="om">Oman</option>
+                            <option value="jo">Jordan</option>
+                            <option value="lb">Lebanon</option>
+                            <option value="pe">Peru</option>
+                            <option value="ec">Ecuador</option>
+                            <option value="ve">Venezuela</option>
+                            <option value="cr">Costa Rica</option>
+                            <option value="pa">Panama</option>
+                            <option value="uy">Uruguay</option>
+                            <option value="bo">Bolivia</option>
+                            <option value="py">Paraguay</option>
+                            <option value="do">Dominican Republic</option>
+                            <option value="jm">Jamaica</option>
+                            <option value="fj">Fiji</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary job-search-standalone-btn" id="jobSearchSubmit">Search jobs</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Aggregator & CV Positioning Section -->
+    <section id="job-aggregator" class="job-aggregator-section" role="region" aria-labelledby="job-aggregator-heading">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="job-aggregator-heading" class="section-title">Job Aggregator & CV Positioning</h2>
+                <p class="section-description">
+                    Results from your search appear below. Upload your CV to see match scores and positioning tips.
+                </p>
+            </div>
+            <div class="job-search-layout">
+                <aside class="cv-positioning-card" aria-labelledby="positioning-heading">
+                    <h3 id="positioning-heading" class="positioning-title">
+                        <svg class="positioning-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path></svg>
+                        CV Positioning
+                    </h3>
+                    <p class="positioning-intro">Optimize your resume for applicant tracking systems and job boards.</p>
+                    <div class="positioning-placeholder" id="positioningPlaceholder">
+                        <p>Upload your CV to get a job-ready headline and summary suggestions.</p>
+                    </div>
+                    <div class="positioning-content" id="positioningContent" style="display: none;">
+                        <div class="positioning-item">
+                            <label>Suggested headline</label>
+                            <p class="positioning-value" id="suggestedHeadline"></p>
+                        </div>
+                        <div class="positioning-item">
+                            <label>Summary snippet for applications</label>
+                            <p class="positioning-value" id="suggestedSummary"></p>
+                        </div>
+                        <div class="positioning-item">
+                            <label>Keywords to add</label>
+                            <div class="keywords-to-add" id="keywordsToAdd"></div>
+                        </div>
+                    </div>
+                </aside>
+                <div class="job-aggregator-block">
+                    <div class="aggregator-header">
+                        <div class="aggregator-title-section">
+                            <h3 class="aggregator-title">Jobs from Multiple Sources</h3>
+                            <div class="source-badges">
+                                <span class="source-badge" data-source="indeed">Indeed</span>
+                                <span class="source-badge" data-source="linkedin">LinkedIn</span>
+                                <span class="source-badge" data-source="google">Google Jobs</span>
+                            </div>
+                        </div>
+                        <div class="aggregator-filters">
+                            <div class="filter-group">
+                                <input type="text" id="aggregatorSearchInput" class="aggregator-search-input" placeholder="Job title, company, or keywords..." aria-label="Search jobs">
+                                <button class="filter-toggle-btn" id="advancedFiltersToggle" aria-label="Toggle advanced filters">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                                    </svg>
+                                    Filters
+                                </button>
+                            </div>
+                            <div class="advanced-filters" id="advancedFilters" style="display: none;">
+                                <div class="filter-row">
+                                    <select id="filterLocation" class="filter-select">
+                                        <option value="">All Locations</option>
+                                        <option value="remote">Remote</option>
+                                        <option value="london">London, UK</option>
+                                        <option value="new-york">New York, NY</option>
+                                        <option value="san-francisco">San Francisco, CA</option>
+                                        <option value="berlin">Berlin, Germany</option>
+                                        <option value="toronto">Toronto, Canada</option>
+                                    </select>
+                                    <select id="filterJobType" class="filter-select">
+                                        <option value="">All Job Types</option>
+                                        <option value="full-time">Full-time</option>
+                                        <option value="part-time">Part-time</option>
+                                        <option value="contract">Contract</option>
+                                        <option value="internship">Internship</option>
+                                    </select>
+                                    <select id="filterExperience" class="filter-select">
+                                        <option value="">All Experience Levels</option>
+                                        <option value="entry">Entry Level</option>
+                                        <option value="mid">Mid Level</option>
+                                        <option value="senior">Senior Level</option>
+                                        <option value="executive">Executive</option>
+                                    </select>
+                                </div>
+                                <div class="filter-row">
+                                    <select id="filterSalary" class="filter-select">
+                                        <option value="">Any Salary</option>
+                                        <option value="30-50">$30k - $50k</option>
+                                        <option value="50-80">$50k - $80k</option>
+                                        <option value="80-120">$80k - $120k</option>
+                                        <option value="120+">$120k+</option>
+                                    </select>
+                                    <select id="filterSource" class="filter-select">
+                                        <option value="">All Sources</option>
+                                        <option value="indeed">Indeed</option>
+                                        <option value="linkedin">LinkedIn</option>
+                                        <option value="google">Google Jobs</option>
+                                    </select>
+                                    <button class="btn btn-secondary btn-small" id="clearFilters">Clear All</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aggregator-stats" id="aggregatorStats">
+                            <span id="jobsCount">0</span> jobs found
+                        </div>
+                    </div>
+                    <div class="jobs-list-aggregator" id="jobsListAggregator"></div>
+                    <div class="jobs-loading" id="jobsLoading" style="display: none;">
+                        <div class="loading-spinner"></div>
+                        <p>Aggregating jobs from multiple sources...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Detail Modal -->
+    <div class="modal-overlay" id="jobModalOverlay" style="display: none;" role="dialog" aria-labelledby="jobModalTitle" aria-modal="true">
+        <div class="modal-container">
+            <button class="modal-close" id="jobModalClose" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-content" id="jobModalContent"></div>
+        </div>
+    </div>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works" role="region" aria-labelledby="how-it-works-heading">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="how-it-works-heading" class="section-title">How It Works</h2>
+                <p class="section-description">
+                    Simple, fast, and effective resume screening in three easy steps
+                </p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Upload Resumes</h3>
+                    <p class="step-description">
+                        Upload one or multiple resume files in PDF, DOC, or DOCX format.
+                    </p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">AI Analysis</h3>
+                    <p class="step-description">
+                        Our AI extracts key information, skills, experience, and qualifications automatically.
+                    </p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Get Results</h3>
+                    <p class="step-description">
+                        Review ranked candidates with match scores, insights, and recommendations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="6" fill="#2563EB"/>
+                            <path d="M16 8L20 14H12L16 8Z" fill="white"/>
+                            <path d="M10 16L14 22H6L10 16Z" fill="white"/>
+                            <path d="M22 16L26 22H18L22 16Z" fill="white"/>
+                        </svg>
+                        <span class="logo-text">VerifyIQ</span>
+                    </div>
+                    <p class="footer-description">
+                        Intelligent resume screening for modern recruiters.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#upload">ATS Check</a></li>
+                        <li><a href="#job-search">Job Search</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#privacy">Privacy</a></li>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#security">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VerifyIQ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional: set to your deployed /api/jobs URL to populate from Google Jobs (see README). For local dev with npm run dev-api, use /api/jobs. -->
+    <script>window.VerifyIQ_JOB_API_URL = '/api/jobs';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" crossorigin="anonymous"></script>
+    <script src="scripts/main.js?v=1.0.5"></script>
+</body>
+</html>

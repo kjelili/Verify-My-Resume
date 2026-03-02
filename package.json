@@ -1,0 +1,23 @@
+{
+  "name": "verifyiq-resume-screening",
+  "version": "1.0.0",
+  "description": "Modern resume screening application with AI-powered analysis",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -o",
+    "dev": "npx http-server . -p 3000 -o",
+    "dev-api": "node server.js"
+  },
+  "keywords": [
+    "resume",
+    "screening",
+    "recruitment",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
